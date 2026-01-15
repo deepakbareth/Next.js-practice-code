@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import ProfileApi from "./profileApiFolder/ProfileApi";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -19,6 +20,9 @@ export default function Navbar() {
           <Link href="/" className="hover:text-blue-500">Home</Link>
           <Link href="/About" className="hover:text-blue-500">About</Link>
           <Link href="/contact" className="hover:text-blue-500">Contact</Link>
+          <Link href="/myprofile/1" className="hover:text-blue-500">Profile</Link>
+
+        {/* <ProfileApi/> */}
         </div>
 
         {/* Mobile Button */}
